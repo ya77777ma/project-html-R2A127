@@ -121,8 +121,8 @@ img {
 メインビジュアル
 ---------------------------------*/
 .main-visual {
-  font-family: "Hiragino Sans";
-  color:#333;
+  font-family: 'Hiragino Sans';
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +198,7 @@ img {
 /*--------------------------------
 Works
 ---------------------------------*/
-.works-section:nth-child(even){
+.works-section:nth-child(even) {
   background-color: #f7f7f7;
 }
 
@@ -236,15 +236,15 @@ Works
   /* box-shadowで外枠を */
 }
 
-a:hover{
-  border:solid 1px #fff;
-  color:#fff;
+a:hover {
+  border: solid 1px #fff;
+  color: #fff;
   background-color: #ccc;
 }
 
-a:hover::before{
+a:hover::before {
   transform: scale(1);
-  opacity:0.6;
+  opacity: 0.6;
 }
 
 .btn-box {
@@ -265,9 +265,9 @@ a:hover::before{
   border: 2px solid transparent;
   color: #000;
 }
-.btn-box:hover{
+.btn-box:hover {
   border: 2px solid transparent;
-  color:#000
+  color: #000;
 }
 
 .btn-box:before,
@@ -375,74 +375,86 @@ About
   color: #000;
 }
 
-table{
-  font-size:1.2rem;
-  width:60%;
+table {
+  font-size: 1.2rem;
+  width: 60%;
 }
 
-table tr:nth-child(odd){
+table tr:nth-child(odd) {
   background-color: #f7f7f7;
 }
 
-th{
-  padding:10px;
+th {
+  padding: 10px;
 }
 
-td{
-  padding:10px;
+td {
+  padding: 10px;
 }
 
 /*--------------------------------
 photo
 ---------------------------------*/
-.photo{
-  display:flex;
+.photo {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding:10px;
+  padding: 10px;
+  width: 150px;
+}
+
+.photo img {
+  width: 350px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .photo-from {
+    flex-direction: column;
+  }
 }
 
 /*--------------------------------
 contact
 ---------------------------------*/
 .contact-item input {
-  padding:5px;
-  border-radius:5px;
-  border:1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   width: 100%;
 }
 
-.contact-from{
+.contact-from {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
 }
 
-.from-title{
+.from-title {
   margin-bottom: 2px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
-.must{
+.must {
   margin-left: 5px;
-  padding:2px;
-  font-size:0.8rem;
+  padding: 2px;
+  font-size: 0.8rem;
   background-color: aqua;
-  color:#fff;
-  border-radius:5px;
-  border:1px solid #ccc;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.btn{
+.btn {
   width: 100%;
-  padding:10px 50px;
+  padding: 10px 50px;
   background-color: #574bc3;
-  font-size:1.2rem;
-  color:#f7f7f7;
-  font-weight:bold;
-  border-radius:10px;
-  margin-top:10px;
-  cursor:pointer;
+  font-size: 1.2rem;
+  color: #f7f7f7;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
