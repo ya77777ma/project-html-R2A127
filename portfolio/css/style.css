@@ -400,16 +400,15 @@ photo
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px;
-  width: 150px;
+  padding: 70px;
 }
 
 .photo img {
   width: 350px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 750px) {
   .photo-from {
     flex-direction: column;
   }
